@@ -1,7 +1,12 @@
 <ion-content [fullscreen]="true">
 
   <ion-toolbar class="all">
-    <ion-button id="present-alert" slot="end"> <ion-icon name="log-out-outline" color="light" aria-hidden="true" class="bottom-nav" ></ion-icon></ion-button>
+    <ion-buttons>
+      <ion-button color="none" routerLink="/home">
+        <ion-icon slot="icon-only" color="dark" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-button class="des" id="present-alert" slot="end"> <ion-icon name="log-out-outline" color="dark" aria-hidden="true" class="bottom-nav" ></ion-icon></ion-button>
     <ion-alert
       trigger="present-alert"
       header="Are you sure you want to logout?"
@@ -114,13 +119,10 @@
     </ion-input>
   </ion-item>
 
-  <div class="des1">
-  <ion-button expand="block" routerLink="/account">SAVE CHANGES</ion-button>
-</div>
+
+  <ion-button class="des1" expand="block" routerLink="/account">SAVE CHANGES</ion-button>
+
 </ion-list>
 </ion-card-content>
 </ion-card>
   </div>
-  
-
- 
